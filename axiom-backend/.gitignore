@@ -1,0 +1,48 @@
+
+# Dependencies
+node_modules
+/coverage
+/build
+/dist
+/.nyc_output
+
+# Optional npm cache files
+.npm
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# TypeScript files
+*.ts
+!*.d.ts
+# JavaScript files compiled from TypeScript
+*.js.map
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+*.log
+logs
+*.tgz
+
+# OS and IDE files
+.DS_Store
+.idea
+.vscode
+*.suo
+*.ntvs
+*.njsproj
+*.sln
+
+# Testing
+/test/coverage
+/test-results.xml
+mochawesome-report
+
+# Editor-specific
+.editorconfig
