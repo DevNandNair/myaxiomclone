@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ReactQueryProvider } from "@/components/providers/ReactQueryProvider";
+import { ReduxProvider } from "@/components/providers/ReduxProvider";
 
 export const metadata: Metadata = {
   title: "Axiom Pulse Clone",
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ReactQueryProvider>{children}</ReactQueryProvider>
+          <ReduxProvider>
+          <ReactQueryProvider>{children}</ReactQueryProvider>
+        </ReduxProvider>
       </body>
     </html>
   );
